@@ -1,0 +1,54 @@
+.position {
+  flex: 1;
+  padding-top: 6.4rem;
+  padding-left: 8.5rem;
+
+  &__header {
+    color: var(--color-text-black-1);
+    font-size: 3.2rem;
+    margin-bottom: 6rem;
+  }
+
+  &__note {
+    margin: 0;
+    color: var(--color-text-black-1);
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 50%;
+    margin-bottom: 3.2rem;
+    padding-bottom: 1.3rem;
+    position: relative;
+
+    a {
+      display: block;
+      color: var(--color-text-black-1);
+      font-size: 1.7rem;
+      transition: 0.3s all ease;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 26px;
+      height: 2px;
+      background-color: var(--color-main);
+    }
+
+    &:hover {
+      a {
+        color: var(--color-main);
+      }
+    }
+  }
+}

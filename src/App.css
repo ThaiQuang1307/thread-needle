@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+:root {
+  --color-main: #ffcd4a;
+  --color-text-black-1: #1a1a1a;
+  --color-text-black-2: #222222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+  font-size: 10px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.btn-default {
+  padding: 0.8rem 5rem;
+  background-color: #ddd;
+  color: #000;
+  transition: 0.5s all ease;
+  border: 2px solid #ddd;
+  font-size: 1.8rem;
+}
+
+.btn-default:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-black:hover {
+  background-color: var(--color-main);
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-submit {
+}
+
+.btn-submit:hover {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  color: var(--color-main);
+  cursor: pointer;
 }

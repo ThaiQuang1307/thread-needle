@@ -1,0 +1,45 @@
+.job-detail {
+  display: flex;
+  height: 100vh;
+
+  &__banner {
+    position: relative;
+  }
+
+  &__content {
+    padding-top: 6.4rem;
+    padding-left: 8.5rem;
+    padding-right: 6.5rem;
+  }
+
+  &__des {
+    font-size: 2.3rem;
+  }
+
+  &__main {
+    margin-top: 5.5rem;
+    padding-right: 3rem;
+
+    strong {
+      display: block;
+      color: var(--color-text-black-2);
+      font-size: 1.3rem;
+      margin-top: 3rem;
+      line-height: 2.2rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      color: var(--color-text-black-2);
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+    }
+  }
+}
+
+.back {
+  position: absolute;
+  left: 3rem;
+  bottom: 2.5rem;
+}

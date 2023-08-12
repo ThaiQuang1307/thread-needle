@@ -1,0 +1,12 @@
+.go-back {
+  display: inline-block;
+  color: var(--color-main);
+  font-size: 1.3rem;
+  width: 8rem;
+  transition: 0.5s all ease;
+
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+}

@@ -1,0 +1,22 @@
+.banner {
+  height: 100%;
+  position: relative;
+
+  &__img {
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    padding-top: 6.4rem;
+    padding-left: 2.7rem;
+    padding-right: 1.5rem;
+    font-size: 3.2rem;
+    color: #fff;
+  }
+}
